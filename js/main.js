@@ -52,7 +52,7 @@ console.log(letra, contFinal);  */
             }
     }
 return res; */
-G//esPalindromo
+//esPalindromo
 
 //Aquí se escribiran los ejercicios con Strings
 let btnEnviar = document.getElementById("btnEnviar");
@@ -79,13 +79,9 @@ btnEnviar.addEventListener("click", function(event){
         alertError.style.display="block";
         alertError.innerHTML += "<br/>El correo electrónico no es válido.";
     }//
-    let RFCRegex = / /;
+    let RFCRegex = /^[A-Z]{4}[0-9]{6}[A-Z0-9]{3}$/;   //en la pag de expresiones regulares enseñan a poner condiciones para los campos de texto
     if (exampleFormControlInput2.value.match(RFCRegex) == null) {
         alertError.style.display="block";
         alertError.innerHTML += "<br/>El RFC no es válido.";
     }//
-
-
-
-
 });
